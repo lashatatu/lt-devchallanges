@@ -8,7 +8,7 @@
 $mobile: 768px;
 
 .container {
-  padding: 4rem 20rem;
+  padding: 4rem 2rem;
   @media screen and (max-width: $mobile) {
     padding: 2rem;
   }
@@ -30,7 +30,10 @@ $mobile: 768px;
 
   @media screen and (max-width: $mobile) {
     flex-direction: column;
+    align-items: center;
+    align-content: center;
     h1 {
+      width: 20rem;
       padding-top: 3rem;
       padding-bottom: 2rem;
     }
@@ -42,13 +45,23 @@ $mobile: 768px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 1rem;
   padding-bottom: 6rem;
+  position: relative;
+
+  .card{
+    width: 100%;
+    position: relative;
+  }
+
 
   img {
     width: 10rem;
   }
 
   .rotated {
-    transform: rotate(90deg) translateY(2rem) translateX(-2rem);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(90deg) translateY(-5rem) translateX(-14.4rem);
   }
 
   .top-aligment {
@@ -65,7 +78,11 @@ $mobile: 768px;
       width: 8rem;
     }
     .rotated {
-      transform: rotate(90deg) translateY(-4rem) translateX(-7rem);
+
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      transform: rotate(90deg) translateY(-3rem) translateX(-11.5rem);
     }
 
     .top-aligment {

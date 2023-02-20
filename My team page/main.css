@@ -6,7 +6,7 @@
 }
 
 .container {
-  padding: 4rem 20rem;
+  padding: 4rem 2rem;
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -29,8 +29,11 @@
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
+    align-items: center;
+    align-content: center;
   }
   .header h1 {
+    width: 20rem;
     padding-top: 3rem;
     padding-bottom: 2rem;
   }
@@ -41,12 +44,20 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 1rem;
   padding-bottom: 6rem;
+  position: relative;
+}
+.cards .card {
+  width: 100%;
+  position: relative;
 }
 .cards img {
   width: 10rem;
 }
 .cards .rotated {
-  transform: rotate(90deg) translateY(2rem) translateX(-2rem);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: rotate(90deg) translateY(-5rem) translateX(-14.4rem);
 }
 .cards .top-aligment {
   padding-top: 5rem;
@@ -62,7 +73,10 @@
     width: 8rem;
   }
   .cards .rotated {
-    transform: rotate(90deg) translateY(-4rem) translateX(-7rem);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(90deg) translateY(-3rem) translateX(-11.5rem);
   }
   .cards .top-aligment {
     padding-top: 0rem;
